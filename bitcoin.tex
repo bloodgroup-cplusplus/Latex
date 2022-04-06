@@ -3,6 +3,11 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage[pdftex]{pict2e}
+\usepackage[dvipsnames]{xcolor}
+\setlength{\unitlength}{1cm}
+\setlength{\fboxsep}{4pt}
+
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{tikz}
@@ -84,23 +89,19 @@ This is the right time we define what algebraic structures actually are : Algebr
 \section * {GROUPS}
 \hrule 
 \bigskip
-\textbf{ The first algebraic structure we study here are Groups. Groups (mathematically denoted by G) are finite or infinite sets which on performing some binary operation ( binary operation includes '+','-','*','/' ) on its elements preserve four fundamental propositions of closure,associativity,identity and inverse. We shall now understand what actually are these four propositions (closure,associativity,identity and inverse ) and how do these make sense geometrically.}
+\textbf{ The first algebraic structure we study here are Groups. Groups (mathematically denoted by G) are finite or infinite sets which on performing some binary operation ( binary operation includes '+','-','*','/' ) on its elements preserve four fundamental propositions of closure,associativity,identity and inverse. We shall now understand what actually are these four propositions (closure,associativity,identity and inverse ) and how do these make sense geometrically.
+For understanding this clearly let's take a square. Since middle we were taught to find out the area of square or perimeter of the square but here we won't bother finding any of it rather we take the square and start rotating it . Let's denote our original square by the letter 'I'. Now we shall rotate this square by an angle of 90 ( I (rotate by 90 degrees) ---> r1 ) we call this rotated square r1. In the second round we take the original square and rotate it by 180 degrees we call it r2 ( I ----> rotate by 180 degrees (r2)) 
+}
 \\
 \\
-\\
-\begin {tikzpicture}
-\draw (0,0) --(4,0) node [midway,below] {$1$}
---(2,4) node[midway,right] {$2$}
---(0,0) node[midway,left] {$3$};
-\end{tikzpicture}
-\pagebreak
+\fbox{%
+\begin{picture}(2,2)(4,0)
+\put(4,0){{\color{blue}\circle*{0.25}}\hbox{\kern3pt \texttt{A}}}
+\put(6,2){{\color{red}\circle*{0.25}}\hbox{\kern3pt \texttt{C}}}
+\put(6,0){{\color{green}\circle*{0.25}}\hbox{\kern3pt\texttt{B}}}
+\put(4,2){{\color{yellow}\circle*{0.25}}\hbox{\kern3pt\texttt{D}}}
+\end{picture}}
 
-\begin{tikzpicture}
-\draw[step=2cm,black,very thin] (-2.0,0) grid(12.0,13.8);
-\draw (-1,13) circle (0.25cm);
-\draw (-2,11.5) rectangle (-0.5,11);
-\draw (-2,9) rectangle ( -0.5,9.5);
-\end{tikzpicture}
 \pagebreak
 
 \section * {DEFINITION OF FEW PROPERTIES OF SETS }
@@ -122,10 +123,6 @@ This is the right time we define what algebraic structures actually are : Algebr
 \section * {DEFINITION OF FEW PROPERTIES OF SETS }
 \hrule 
 \bigskip
-\\
-\\
-\\
-
 
 
 \textit{Additive Inverse:\quad}\textbf{The additive inverse property implies that if ‘a is in the set then , ‘-a’ is in the set such that a+(-a) = 0 In the set \{-1,0,1\} we see that we have additive inverse of -1 which is 1   we have additive inverse of 1 which is -1 and additive inverse of 0 is 0 itself \{1+(-1)=0, 0+(-0) = 0, -1+(1) = 0\}}
