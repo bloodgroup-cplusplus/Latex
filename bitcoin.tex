@@ -10,8 +10,7 @@
 
 \usepackage{hyperref}
 \usepackage{graphicx}
-\usepackage{tikz}
-\graphicspath{ {./images/} }
+\usepackage{tikz} \graphicspath{ {./images/} }
 
 
 \begin{document}
@@ -111,21 +110,48 @@ This is the right time we define what algebraic structures actually are : Algebr
 \hrule 
 \bigskip
 \textbf{ The first algebraic structure we study here are Groups. Groups (mathematically denoted by G) are finite or infinite sets which on performing some binary operation ( binary operation includes '+','-','*','/' ) on its elements preserve four fundamental propositions of closure,associativity,identity and inverse.The mathematical notation of groups i.e., ( G, . ) can be understood by replacing the '.' in ( G, . ) by any arithmetic operator.Let's add '+' operator in it . (G,'+') could be understood as a set which satisfies and preserves the four proposition of groups(identity,associativity,inverse,closure) when any two elements from the set is taken and addition is performed on its elements or objects .Similarly ( G, * ) satisfies and preserves the four group propositions under multiplication of  its elements 
-Later we shall look at Fields which are second algebraic structures we shall study which preserve these propositions  for both addition and multiplication(G,'*','+') when opertaions are applied on it's elements.}
+Later we shall look at Fields which are second algebraic structures which preserve these propositions  for both addition and multiplication(G,'*','+') when opertaions are applied on it's elements.}
 \\
 \textbf{ We shall now understand what actually are these four propositions (closure,associativity,identity and inverse ) and how do these make sense geometrically.
-For understanding this clearly let's take a square. Since middle we were taught to find out the area of square or perimeter of the square but here we won't bother finding any of it rather we take the square make it dance a bit . Each of the square's dance move shall be denoted by a symbol.Our square here is quiet flexible with a total of eight dance moves. The move where our square is as it is is named as "id". The dance move where the square rotates by 90 shall be called as \[r1\]. The move in which our square rotates by 180 degrees is \[r_2\]. Rotation by 270 degrees as \[r_3\]. The dance move where we reflect the square vertically is denoted as \[f_v]\]. For horizontal reflection it shall be denoted by \[f_h\]. \[f_d\] for diagonal reflection and \[f_c\] for counter diagonal reflection .}
-\\
-\\
-\fbox{%
-\begin{picture}(2,2)(4,0)
-\put(4,0){{\color{blue}\circle*{0.25}}\hbox{\kern3pt \texttt{A}}}
-\put(6,2){{\color{red}\circle*{0.25}}\hbox{\kern3pt \texttt{C}}}
-\put(6,0){{\color{green}\circle*{0.25}}\hbox{\kern3pt\texttt{B}}}
-\put(4,2){{\color{yellow}\circle*{0.25}}\hbox{\kern3pt\texttt{D}}}
-\end{picture}}
-\\
+For understanding this clearly let's take a square. Since middle we were taught to find out the area of square or perimeter of the square but here we won't bother finding any of it rather we take the square make it dance a bit . Each of the square's dance move shall be denoted by a symbol.}
 \pagebreak
+\textbf{Our square here is quiet flexible with a total of eight dance moves.Mathematically these dance move of any objects are referred to as "symmetries"  of it but we shall stick to "dance moves" \\ .We now introduce the moves of the square one by one.The move where our square is as it is is named as identity denoted by the symbol "id":}
+\begin{center}
+    \includegraphics[scale = 0.9,width =2cm]{images/identity.png}
+    \center\textbf{identity  (id) }
+\end{center}
+
+\textbf{The dance move where our identity square rotates by 90 degrees clockwise  shall be called as r1.}
+\begin{center}
+    \includegraphics[scale = 0.9, width = 2cm]{images/ninty_clockwise.png}
+    \center\textbf{rotation of identity by 90 degrees  (r1)}
+\end{center}
+
+\textbf{The move in which our identity square rotates by 180 degrees clockwise as r2} 
+\begin{center}
+    \includegraphics[scale = 0.9, width = 2cm]{images/one_eighty.png}
+    \center\textbf{rotation of identity by 180 degrees (r2)}
+\end{center}
+
+\textbf{Rotation of identity by 270 degrees in the clockwise direction as r3 }
+\begin{center}
+    \includegraphics[scale = 0.9, width = 2cm]{images/two_seventy.png}
+    \center\textbf{rotation of identity by 270 degrees (r3)}
+\end{center}
+
+
+\pagebreak
+\textbf{Reflection of identity on a vertical line ( reflection on y-axis) as \[f_v\] }
+\begin{center}
+    \includegraphics[scale = 0.9,width = 2cm] {images/y_axis.png}
+\end{center}
+
+\textbf{Reflection of identity on a horizontal line ( reflection on x-axis) as \[f_h\] }
+\begin{center}
+    \includegraphics[scale = 0.9, width = 2cm] {images/y_axis.png}
+
+\pagebreak
+
 \section * {FIELDS AND THEIR ADDITIONAL PROPERTIES}
 \hrule 
 \bigskip
@@ -155,7 +181,7 @@ and -1 *(multiplicative inverse of -1) = 1}
 \\
 
 6)\textit{Distributive property:\quad}\textbf{The distributive identity states that if operations like a * (b+c) gives the same output as (a*b)+(a*c) . This property is is one property where additon and multiplication are involved together and the output is true in both the equation. Let's take our set \{-1,0,1\} to understand this  
-n performing -1*(0+1) we get -1 which is basically performing (-1*0)+(-1*1) = -1 . Distributive property is inherently preserved for a Field .}
+n performing -1*(0+1) we get -1 which is basically performing (-1*0)+(-1*1) = -1 . Distributive property is inherently preserved for a Field under addition and multiplication.}
 \\
 \\
 \pagebreak 
@@ -282,8 +308,8 @@ Let's verify it on F(11) = \{0,1,2,3,4,5,6,7,8,9,10\}
 \hrule 
 \bigskip
 \textbf{Let's us consider  a finite field of any prime order say  F(11) = \{0,1,2,3,4,5,6,7,8,9,10\} \\
-Then we  multiply each number in the given set by a number say 'n' (n is strictly greater than  0). Take  n=1, n=2 and n=3 (multiplication here refers to modulo multiplication (n*2) will be (n*2)\%\ p) 
-\\ In the first case when we multiply each element by 1 (we exclude 0 since our n should be greater than 0 so our set starts from 1) the resultant set looks something like this \\
+Then we  multiply each number in the given set by a number say 'n' (n is strictly greater than  0 and less or equal to p-1). Take  n=1, n=2 and n=3 (multiplication here refers to modulo multiplication (n*2) will be (n*2)\%\ p) 
+\\ In the first case when we multiply each element by 1 (we exclude 0 since our n should be greater than 0 and less than or equal to p-1 so our set starts from 1) the resultant set looks something like this \\
 \{1 \%\ 11, 2 \%\ 11, 3 \%\ 11, 4\%\ 11, ...... 10 \%\ 11 \}
 \\
 In the second case when we multiply each element by 2 the resultant set looks something like this \\ 
@@ -302,7 +328,7 @@ For n = 3 our final set looks like this \{
 On carefully examining each set we get we can see that each set just contains all the original elements we started with ( if we write the sets we obtained by multiplying by n=2 and n=3 in ascending order we still get the original set i.e. \{1,2,3,4,5,6,7,8,9,10\} 
 \\
 \\
-From here we can conclude that on modulo multiplication of our field elements by any 'n' which is greater than 0 we get the original field element. This statement can be mathematically written as \\ \\
+From here we can conclude that on modulo multiplication of our field elements by any 'n' which is greater than 0 and less than p-1  we get the original field element. This statement can be mathematically written as \\ \\
 \{1 \%\ p, 2 \%\ p, 3 \%\ p, 4\%\,p ......(p-1) \%\ p \} = \{(n*1) \%\ p, (n*2) \%\ p, (n*3) \%\ p ......(n* p-1) \%\ p \} for any n which is greater than 0 
 \\
 }
@@ -351,7 +377,7 @@ Another important bit of information that we have to keep in mind is that we've 
 \\
 \textbf{we can replace the value of 1 in the above equation by the value of 1 we have obtained in Fermat's little theorem. On doing so  }
 \textbf{ \[ b^{-1} =(b^{-1} *  n ^{p-1})  \%\ p \] }
-\textbf{Now since we know n is any number greater than 0 n could be b  as well or n could be a or  n could be replaced by any number greater than 0.On replacing n by b we get }
+\textbf{Now since we know n is any number greater than 0 and less than p-1. Therefore  n could be b  as well or n could be a or  n could be replaced by any number greater than 0 and less than or equal to p-1.On replacing n by b we get }
 \pagebreak
 \textbf {\[ (b^{-1}) = (b^{-1} * b^{p-1}) \%\ p \]  }
 \textbf{we know when two bases are same power can be added ( a power p * a power p can be written a  power (p+p) similarly  here on the right hand side of the above equation  b power -1 and b power p-1 can be written as b power -1+p-1 so rewriting the equation we have }
@@ -388,6 +414,8 @@ Another important bit of information that we have to keep in mind is that we've 
 \textbf {\[8 ^{-1} = 8 ^{11-2} \%\ 11 \]}
 \textbf {\[8 ^{-1} = 134217728 \%\ 11 \]}
 \textbf {\[8 ^{-1} = 7 \]}
+\\
+\\
 \textbf {\[(7* 7) \%\ 11 = 5\]}
 \textbf { we see that on division we get 5 which strictly lies inside the field you can now take other examples and verify for yourself.Now that we have verified closure( modulo addition, subtraction, multiplication, division of any two finite field elements always lies inside field),additive identity (a + 0 = 0 ), multiplicative identity (a* 1 = a), additive inverse (a +(-a) = 0) and multiplicative inverse ( a* a inverse =1),we are now ready to look forward to a new topic. }
 
