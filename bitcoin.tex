@@ -7,7 +7,7 @@
 \usepackage[dvipsnames]{xcolor}
 \setlength{\unitlength}{1cm}
 \setlength{\fboxsep}{4pt}
-
+\usepackage{fixltx2e}
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{tikz} \graphicspath{ {./images/} }
@@ -139,18 +139,40 @@ For understanding this clearly let's take a square. Since middle we were taught 
     \center\textbf{rotation of identity by 270 degrees (r3)}
 \end{center}
 
-
 \pagebreak
-\textbf{Reflection of identity on a vertical line ( reflection on y-axis) as \[f_v\] }
+\textbf{Reflection of identity on a vertical line ( reflection on y axis) as f \textsubscript{v}}
 \begin{center}
     \includegraphics[scale = 0.9,width = 2cm] {images/y_axis.png}
+    \center\textbf{Vertical refelction of square (reflection on y axis)  as f\textsubscript{v}}
 \end{center}
 
-\textbf{Reflection of identity on a horizontal line ( reflection on x-axis) as \[f_h\] }
+\textbf{Reflection of identity on a horizontal line  reflection on x axis as f\textsubscript{h}}
 \begin{center}
-    \includegraphics[scale = 0.9, width = 2cm] {images/y_axis.png}
+    \includegraphics[scale = 0.9, width = 2cm] {images/x_axis.png}
+    \center\textbf{Horizontal reflection of square (reflection on the x axis) as f\textsubscript{h}}
+\end{center}
+ 
+\textbf{Rotation of the square along its main diagonal as f\textsubscript{d}}
+\begin{center}
+    \includegraphics[scale = 0.9, width = 2cm] {images/diagonal.png}
+    \center\textbf{Diagonal rotation of square as f\textsubscript{d}}
+\end{center}
 
+\textbf{Counter diagonal rotation of the square as f\textsubscript{c}}
+\begin{center}
+    \includegraphics[scale = 0.9, width = 2cm] {images/counter_diagonal.png}
+    \center\textbf{Counter diagonal rotation of square as f\textsubscript{c}}
+\end{center}
 \pagebreak
+\textbf{Now let's see how the given eight dance moves of square help us in verifying at the four axioms groups (closure,associativity,identity,inverse). The real action begins when we start composing dance moves which is the action of performing one dance move after another.On composing two dance moves we find out that we get another dance move
+    We learnt that groups preserve these axioms under the application of binary operation (+,-,*,/) on its elements. Here the binary operation we are going to perform is composition which is performing one dance move after another. Let's denote composition by the dot symbol '.'.Our set currently contains all the dance moves a square can perform
+    Let's call our dance set as DS. DS contains all the moves of a square \{id,r1,r2,r3,f\textsubscript{v},f\textsubscript{h},f\textsubscript{c},f\textsubscript{d} \}}
+
+\textbf{ One more thing to keep in mind while performing the composition operation on the set is that if we take two elements say r1 and r3 and apply composition to it mathematically it looks like this
+    r1 . r3 ("Apply symmetry r1 after performing r3"). we always read composition operation from  FROM RIGHT TO LEFT. That is in this case the square first dance 270 degrees rotation followed by 90 degrees rotation
+}
+
+\textbf{We shall now construct a table where we compose all the dance moves one after another and see it }
 
 \section * {FIELDS AND THEIR ADDITIONAL PROPERTIES}
 \hrule 
