@@ -7,9 +7,8 @@
 \usepackage[dvipsnames]{xcolor}
 \setlength{\unitlength}{1cm}
 \setlength{\fboxsep}{4pt}
-\usepackage{fixltx2e}
 \usepackage{hyperref}
-\usepackage{graphicx}
+\usepackage{subfig}
 \usepackage{tikz} \graphicspath{ {./images/} }
 
 
@@ -169,11 +168,22 @@ For understanding this clearly let's take a square. Since middle we were taught 
     Let's call our dance set as DS. DS contains all the moves of a square \{id,r1,r2,r3,f\textsubscript{v},f\textsubscript{h},f\textsubscript{c},f\textsubscript{d} \}}
 
 \textbf{ One more thing to keep in mind while performing the composition operation on the set is that if we take two elements say r1 and r3 and apply composition to it mathematically it looks like this
-    r1 . r3 ("Apply symmetry r1 after performing r3"). we always read composition operation from  FROM RIGHT TO LEFT. That is in this case the square first dance 270 degrees rotation followed by 90 degrees rotation
-}
+    r1 . r3 ("Apply symmetry r1 after performing r3"). we always read composition operation from  FROM RIGHT TO LEFT. That is in this case the square first performs the r3 move ( 270 degrees rotation)  followed by  r2 move (180 degrees rotation.)}
 
-\textbf{We shall now construct a table where we compose all the dance moves one after another and see it }
 
+\textbf{We shall now construct a table where we have all the  compositions of the square.   }
+\pagebreak
+\begin{figure}
+    \centering
+    \subfloat[\centering label ] {{\includegraphics[width=7cm]{./images/all_composition_notation.png}}}
+    \subfloat[\centering label ] {{\includegraphics[width=7cm]{./images/all_composition_actions.png}}}
+    \caption{All compositions of symmetries of a square }
+\end{figure}
+\textbf{Let's see what the two tables mean. First the green coloured  column denotes all the elements of the set DS Similarly the blue coloured row contains all the elements of DS . The small circle on the top represents the composition operator. All the remaining rows and column which are in black shows the result of one composition action followed by another .
+    For instance if we look at the third column of the second row we see r1 written. This means that on performing id (id on the blue row) followed by r1 (on the green column ) we get the result r1 . Mathematically that can be written as (r1 . id = r1 ) (remember the rule to read composition from RIGHT TO LEFT we performed identity first followed by r1 )
+Taking a random instance say column five of row four we again see r1 which is that result of composing two moves r2 and r3 ( r3 . r2 ). All the remaining elements shows the result of composing one action followed by another. The table on the right just shows how the squares actually move and it is made for the reader to get an intuition and play around with it }
+
+\pagebreak
 \section * {FIELDS AND THEIR ADDITIONAL PROPERTIES}
 \hrule 
 \bigskip
@@ -182,7 +192,7 @@ Now we look at Fields which satisfy and preserve all the prepositions(alongwith 
 Before jumping into these additional properties we observe that Fields are an extension of groups. i.e.,Any algebric structure which is a Field inherently preserves the properties of a group as well. So while verifying a field it's always a good practice to see whether the algebraic structure withholds the inherent properties of a group under binary operation. Once that is established further verifications for field can be carried out.We now look at the additional properties that field satisfies
 }
 \\
-1) \textit{Commutative property:\quad}\textbf{ The closed property states that given a set of numbers say \{1,2,3,4,5,6\} or any other finite set  if we take two element 'a' and another element 'b' and add it a+b the result should always be equal to the result in the case where i take 'b' first follwed by 'a' i.e, (a+b) should equal (b+a) . Also we know that fields hold the property for both addition and multiplication (a*b) should also equal (b*a).
+1) \textit{Commutative property:\quad}\textbf{ The commutative :wproperty states that given a set of numbers say \{1,2,3,4,5,6\} or any other finite set  if we take two element 'a' and another element 'b' and add it a+b the result should always be equal to the result in the case where i take 'b' first follwed by 'a' i.e, (a+b) should equal (b+a) . Also we know that fields hold the property for both addition and multiplication (a*b) should also equal (b*a).
     Let's take a set {0,1,-1} and apply commutative property for our 'a' and 'b' let's say a=0 and b= 1 a+b = 0+1 = 1 = b+a = 1+0 = 1 (we see commutative property for '+' sign holds) similarly for multiplication a= 0 and b=1 (a*b) = (0*1) =0 and (1* 0) = 0 . We see that both in case of addition as well as in the case of multiplication changing the order of our elements, objects doesn't change the required result 
 while performing both addition and multiplication therefore commutative property holds}.
 \\
